@@ -33,7 +33,7 @@ hr {
 .options img {
   gap: 20px;
   padding: 20px;
-  width: 120px;
+  width: 50px;
   cursor: pointer;
   border-radius: 20%;
   border: 2px solid var(--color1);
@@ -51,6 +51,25 @@ hr {
   align-items: center;
 }
 
+.x-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #333;
+}
+
+.x-mark div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+
 .enemy-options {
   display: flex;
   flex-direction: column;
@@ -61,4 +80,21 @@ hr {
   text-align: center;
   font-size: 2rem;
   margin-top: 50px;
+}
+.play-again {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #535233;
+  color: #f5f4d7;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-again:hover {
+  background-color: #951f2b;
+  color: #fff;
 }
