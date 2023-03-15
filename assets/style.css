@@ -1,82 +1,64 @@
 :root {
-    --color1: #951f2b;
-    --color2: #f5f4d7;
-    --color3: #e0dfb1;
-    --color4: #a5a36c;
-    --color5: #535233;
-  }
-  
-  body {
-    background-color: var(--color2);
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  
-  h1 {
-    font-size: 2em;
-    text-align: center;
-    margin: 1em 0;
-    color: var(--color1);
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    text-align: center;
-    margin: 0.5em 0;
-    color: var(--color1);
-  }
-  
-  hr {
-    border: none;
-    border-top: 2px solid var(--color1);
-    margin: 1em auto;
-    width: 50%;
-  }
-  .options {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-  }
-  .player-options img,
-  .enemy-options img {
-    max-width: 100px;
-    opacity: 0.3;
-    cursor: pointer;
-  }
-  
-  .player-options,
-  .enemy-options {
-    width: 50%;
-  }
-  
-  .align {
-    display: flex;
-  }
-  
-  .vencedor {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: var(--color4);
-  }
-  
-  .color1 {
-    color: var(--color1);
-  }
-  
-  .color2 {
-    color: var(--color2);
-  }
-  
-  .color3 {
-    color: var(--color3);
-  }
-  
-  .color4 {
-    color: var(--color4);
-  }
-  
-  .color5 {
-    color: var(--color5);
-  }
-  
+  --color1: #951f2b;
+  --color2: #f5f4d7;
+  --color3: #e0dfb1;
+  --color4: #a5a36c;
+  --color5: #535233;
+}
+
+body {
+  background-color: var(--color2);
+  color: var(--color5);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  color: var(--color1);
+  text-align: center;
+  margin: 30px 0;
+}
+
+hr {
+  border: 1px solid var(--color1);
+  margin: 30px 0;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.options img {
+  gap: 20px;
+  padding: 20px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 20%;
+  border: 2px solid var(--color1);
+  background-color: var(--color3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.options img:hover {
+  transform: scale(1.1);
+}
+
+.player-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enemy-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 50px;
+}
